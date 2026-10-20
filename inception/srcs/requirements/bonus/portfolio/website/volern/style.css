@@ -1,0 +1,91 @@
+body {
+	background-color: #001d3d;
+	margin: 0;
+	padding: 0;
+}
+
+h3 {
+	color: white;
+	text-align: center;
+	text-decoration: underline;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	white-space: pre-line;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+h5 {
+	max-width: 100%;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	white-space: pre-line;
+	color: white;
+	font-weight: bolder;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+section {
+	background-color: #003566;
+	padding: 20px;
+	border-radius: 40px;
+	margin-bottom: 50px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+header {
+	color: white;
+	font-weight: bolder;
+	font-size: 40px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-align: center;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	white-space: pre-line;
+}
+
+footer {
+	color: white;
+	font-weight: bolder;
+	font-size: 30px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-align: center;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	white-space: pre-line;
+}
+
+a {
+	color: #003566;
+	font-weight: bolder;
+}
+
+#intro {
+	color: gray;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom: 50px;
+	margin-top: -40px;
+}
+
+@media (max-width: 700px) {
+	header, footer {
+		font-size: 20px;
+	}
+	h5 {
+		font-size: 15px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	section {
+		margin-bottom: 20px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+}

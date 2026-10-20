@@ -1,0 +1,59 @@
+# ---------- OS / editors ----------
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# ---------- C / C++ build output ----------
+*.o
+*.d
+*.dSYM/
+a.out
+
+# Static libraries are rebuilt by each Makefile...
+*.a
+# ...except the prebuilt MiniLibX used by cub3D
+!cub3D/lib/libmlx.a
+
+# Project executables
+libft/libft.a
+ft_printf/libftprintf.a
+push_swap/push_swap
+push_swap/checker
+minitalk/server
+minitalk/client
+minitalk/server_bonus
+minitalk/client_bonus
+so_long/so_long
+so_long/so_long_bonus
+Philosophers/philo/philo
+Philosophers/philo_bonus/philo_bonus
+minishell/minishell
+cub3D/cub3D
+irc/ircserv
+irc/bot
+
+# ---------- Secrets (never commit) ----------
+.env
+.env.*
+!.env.example
+inception/secrets/
+*.pem
+*.key
+*.crt
+
+# ---------- Node / Next.js (ft_transcendence) ----------
+node_modules/
+.next/
+out/
+build/
+dist/
+npm-debug.log*
+yarn-error.log*
+*.tsbuildinfo
+next-env.d.ts
+
+# Runtime data
+ft_transcendence/backend/database/*.db
+ft_transcendence/backend/src/uploads/

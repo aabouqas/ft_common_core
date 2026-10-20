@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Volern",
+    "version" : "1.6.0",
+	  "description": "Volern is an application that helps Arabic speakers expand their English vocabulary with words, their meanings, examples, and the ability to listen to pronunciations.",
+    "cover": "../images/volern.png",
+    "link" : "https://play.google.com/store/apps/details?id=com.ElEdrissiApps.volern"
+  },
+  {
+    "name": "Birthdays",
+    "version" : "1.5.3",
+	  "description": "Birthdays is a simple app that informs you about your age (e.g., your age, the day you were born, etc.). You can also add your friends and get information about them.",
+    "cover": "../images/birthdays.png",
+    "link" : "https://docs.google.com/forms/d/e/1FAIpQLSdkXwlYFtaWx19ydAQex6S6jbj9nFXEoTkEaKplj4dB-YHNmg/viewform?usp=header"
+  }
+]

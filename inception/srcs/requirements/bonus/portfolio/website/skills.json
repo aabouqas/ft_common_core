@@ -1,0 +1,42 @@
+[
+  {
+    "name": "C",
+    "icon": "images/c.png",
+    "link" : "https://en.wikipedia.org/wiki/C_(programming_language)"
+  },
+  {
+    "name": "Cpp",
+    "icon": "images/cpp.png",
+    "link" : "https://en.wikipedia.org/wiki/C%2B%2B"
+  },
+  {
+    "name": "Java",
+    "icon": "images/java.png",
+    "link" : "https://en.wikipedia.org/wiki/Java_(programming_language)"
+  },
+  {
+    "name": "Kotlin",
+    "icon": "images/kotlin.png",
+    "link" : "https://en.wikipedia.org/wiki/Kotlin_(programming_language)"
+  },
+  {
+    "name": "Android studio",
+    "icon": "images/androidStudio.png",
+    "link" : "https://en.wikipedia.org/wiki/Android_Studio"
+  },
+  {
+    "name": "Git",
+    "icon": "images/git.png",
+    "link" : "https://en.wikipedia.org/wiki/Git"
+  },
+  {
+    "name": "Python",
+    "icon": "images/Python.png",
+    "link" : "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+    "name": "Bash",
+    "icon": "images/bash.png",
+    "link" : "https://en.wikipedia.org/wiki/Bash_(Unix_shell)"
+  }
+]

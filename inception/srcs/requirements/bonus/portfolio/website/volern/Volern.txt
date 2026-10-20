@@ -1,0 +1,38 @@
+Volern privacy policy.
+Effective Date: 18/01/2025
+
+Your privacy is important to us. This Privacy Policy explains how "Volern" handles your data and protects your information.
+
+1. Information Collection
+
+Volern does not collect any personal data directly from users.
+
+2. Third-Party Services
+
+Our app uses third-party advertising services, such as Google AdMob, to display ads. These services may collect information about:
+
+• Your device (e.g., device ID, OS version, app usage)
+
+• Your approximate location
+
+• Your interactions with ads
+
+
+This data is collected solely by the third-party services for the purpose of delivering relevant ads. Please review their respective privacy policies for more information.
+
+3. Data Retention
+
+Volern does not store or retain any personal data beyond the current session. For example, the app does not store your birthdate after the session ends.
+
+4. Legal Compliance
+
+We are committed to complying with applicable privacy laws and regulations, including the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA), as required.
+
+5. Changes to This Privacy Policy
+
+We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any updates will be posted within the app.
+
+6. Contact Us
+
+If you have any questions or concerns about this Privacy Policy, please contact us at:
+Email: abouqassimeledrissi@gmail.com

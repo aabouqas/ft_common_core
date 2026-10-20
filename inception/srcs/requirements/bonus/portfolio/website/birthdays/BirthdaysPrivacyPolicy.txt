@@ -1,0 +1,20 @@
+Privacy Policy for "Birthdays" App
+Effective Date: 11/12/2024
+
+1. Information Collection
+Our app only collects the birthdate entered by the user to calculate the user's age. No other personal data is collected or stored.
+
+2. Data Usage
+All calculations are performed locally on the device. No data is sent to external servers or shared with third-party services.
+
+3. Third-Party Services
+Our app does not integrate any third-party analytics, advertising, or other services that collect user data.
+
+4. Data Retention
+No personal data is stored beyond the current session. The app does not store or retain your birthdate once the session is ended.
+
+5. Changes to This Privacy Policy
+We may update this Privacy Policy from time to time. Any changes will be reflected here.
+
+6. Contact Us
+If you have any questions about this Privacy Policy, please contact us at [ abouqassimeledrissi@gmail.com ].

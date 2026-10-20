@@ -1,0 +1,32 @@
+{
+	"privacy_policy": {
+	  "modification_date": "18/01/2025",
+	  "introduction": "Your privacy is important to us. This Privacy Policy explains how 'Volern' handles your data.",
+	  "sections": [
+		{
+		  "title": "1. Information Collection",
+		  "content": "Volern does not collect any personal data directly from users, except as described below:\n\n- Donations: If you make a donation through the app, the transaction details (such as your name, email address, and payment information) may be collected by the payment service provider (e.g., Google Pay, PayPal, etc.). Volern does not store any payment information directly. All payment transactions are handled by trusted third-party services."
+		},
+		{
+		  "title": "2. Third-Party Services",
+		  "content": "Volern does not use third-party advertising services. However, third-party payment providers may collect and process personal information related to your donation, such as your name, email, and payment details. These third-party services handle your transaction and may retain your data as per their privacy policies. Please review the privacy policies of the payment service providers (e.g., Google Pay, PayPal) for more details."
+		},
+		{
+		  "title": "3. Data Retention",
+		  "content": "Volern does not store or retain any personal data beyond the current session, except for the transaction data processed through third-party services (such as donation-related information). For example, the app does not store your birthdate after the session ends.\n\nThe data related to donations will be retained by the third-party payment service providers as per their privacy policies."
+		},
+		{
+		  "title": "4. Legal Compliance",
+		  "content": "We are committed to complying with applicable privacy laws and regulations, including the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA), as required."
+		},
+		{
+		  "title": "5. Changes to This Privacy Policy",
+		  "content": "We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any updates will be posted within the app."
+		},
+		{
+		  "title": "6. Contact Us",
+		  "content": "If you have any questions or concerns about this Privacy Policy, please contact us at:\nEmail:\n"
+		}
+	  ]
+	}
+  }

@@ -1,0 +1,142 @@
+version: '3.8'
+
+services:
+# === nginx container ===
+  nginx:
+    build: requirements/nginx/
+    image: nginx:aabouqas
+    container_name: nginx
+    ports:
+      - "443:443"
+    volumes:
+      - wordpress:/var/www/wordpress
+    env_file:
+      - .env
+    networks:
+      - inception
+    restart: on-failure
+    depends_on:
+      - wordpress
+# === wordpress container ===
+  wordpress:
+    build: requirements/wordpress
+    image: wordpress:aabouqas
+    container_name: wordpress
+    volumes:
+      - wordpress:/var/www/wordpress
+    networks:
+      - inception
+    restart: on-failure
+    env_file:
+      - .env
+    secrets:
+      - credentials
+      - dp_pass
+      - dp_root_pass
+    depends_on:
+      mariadb:
+        condition: service_healthy
+# === MariaDB container ===
+  mariadb:
+    build: requirements/mariadb
+    image: mariadb:aabouqas
+    container_name: mariadb
+    volumes:
+      - mariadb:/var/lib/mysql
+    networks:
+      - inception
+    restart: on-failure
+    env_file:
+      - .env
+    secrets:
+      - credentials
+      - dp_pass
+      - dp_root_pass
+    healthcheck:
+      test: ["CMD", "nc", "-z", "mariadb", "3306"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+# === cadvisor container ===
+  cadvisor:
+    build: requirements/bonus/cadvisor
+    image: cadvisor:aabouqas
+    container_name: cadvisor
+    ports:
+      - "5001:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /var/lib/docker/:/var/lib/docker:ro
+# === website container ===
+  portfolio:
+    build: requirements/bonus/portfolio
+    image: portfolio:aabouqas
+    container_name: portfolio
+    ports:
+      - "5000:443"
+# === Adminer container ===
+  adminer:
+    build: requirements/bonus/adminer
+    image: adminer:aabouqas
+    container_name: adminer
+    networks:
+      - inception
+    ports:
+      - "5002:443"
+# === redis container ===
+  redis:
+    build: requirements/bonus/redis
+    image: redis:aabouqas
+    container_name: redis
+    networks:
+      - inception
+    ports:
+      - "6379:6379"
+# === ftp container ===
+  ftp:
+    build: requirements/bonus/ftp
+    image: ftp:aabouqas
+    container_name: ftp
+    networks:
+      - inception
+    volumes:
+      - wordpress:/var/www/wordpress
+    env_file:
+      - .env
+    secrets:
+      - credentials
+    ports:
+      - "5010:21"
+      - "5020-5030:5020-5030"
+    depends_on:
+      - wordpress
+
+volumes:
+  mariadb:
+    name: mariadb
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${MARIADB}
+  wordpress:
+    name: wordpress
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${WORDPRESS}
+
+networks:
+  inception:
+    name: inception
+    driver: bridge
+
+secrets:
+  dp_pass:
+    file: ../secrets/db_password.txt
+  dp_root_pass:
+    file: ../secrets/db_root_password.txt
+  credentials:
+    file: ../secrets/credentials.txt
